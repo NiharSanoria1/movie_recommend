@@ -6,3 +6,4 @@ seaborn
 flask 
 flask-sqlalchemy 
 requests
+fuzzywuzzy
