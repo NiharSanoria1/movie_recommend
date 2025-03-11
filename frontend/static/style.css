@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    background-color: #121212; /* Dark mode */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar Container */
+.navbar-container {
+    width: 100%;
+    background-color: #1f1f1f; /* Dark Gray */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Navbar */
+.navbar {
+    width: 100vw; /* Full width */
+    margin: 0;
+    padding: 0;
+    border-radius: 0; /* Remove any rounding */
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Bright yellow */
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Bright Yellow */
+}
+
+/* Main Content */
+.container {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 80px; /* Prevents overlap */
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Input */
+.input-group {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    width: 300px;
+    background-color: #222;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e63c3c;
+}
+
+/* Recommendations */
+#recommendations {
+    margin-top: 20px;
+    display: none;
+}
+
+#recommendationList {
+    list-style: none;
+    padding: 0;
+}
+
+#recommendationList li {
+    margin-bottom: 5px;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
